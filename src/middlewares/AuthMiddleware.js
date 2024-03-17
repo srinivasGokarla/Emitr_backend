@@ -19,4 +19,3 @@ export const AuthMiddleware = (req,res,next) =>{
         return res.json(jsonGenerate(statusCode.UNPROCESSABLE_ENTITY,"Invalid Token"))
     }
 }
-
