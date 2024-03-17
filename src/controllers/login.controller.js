@@ -3,6 +3,7 @@ import User from "../models/User.js";
 import { jsonGenerate } from "../utils/helpers.js";
 import { JWT_TOKEN_SECRET_KEY, statusCode } from "../utils/constants.js";
 import  jwt  from "jsonwebtoken";
+import  bcrypt from "bcryptjs";
 
 export const Login = async (req,res) =>{
 //     const errors = validationResult(req)
